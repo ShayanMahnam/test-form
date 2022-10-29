@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="https://github.com/search" method="get">
+        <fieldset>
+            <legend>values</legend>
+            <select name="s" id="s">
+                <option value="stars">Stars</option>
+                <option value="forks">Forks</option>
+                <option value="updated">Updated</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>
+                ordering
+            </legend>
+            <input type="radio" name="o" value="desc" id="desc">
+            <label for="desc">desc</label>
+            <input type="radio" name="o" value="asc" id="asc">
+            <label for="asc">asc</label>
+        </fieldset>
+        <fieldset>
+            <label for="search">search</label>
+            <input id="search" type="text" name="q" />
+            <button>search</button>
+        </fieldset>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="shayan@gmail.com" required> 
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" required>
+            <label for="password">Password</label>
+            <input type="password"  id="password" autocomplete="new-password" required/>
+            <button>Submit</button>
+        </div>
+        in
+    </form>
+</body>
+</html>
